@@ -1,0 +1,195 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container for the form */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;  /* Increased form width */
+    max-width: 100%;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;/* Basic Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align elements to the left */
+        justify-content: flex-start;
+        min-height: 100vh;
+        padding-left: 20px; /* Add some left padding to ensure spacing from the edge */
+    }
+    
+    /* Container for the form */
+    h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+    
+    /* Form Styling */
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 500px;  /* Adjust the width of the form */
+        max-width: 100%;
+        position: absolute; /* Make the form stick to the left */
+        top: 100px; /* Adjust the vertical position */
+        left: 20px; /* Stick it 20px from the left edge of the screen */
+    }
+    
+    form label {
+        font-size: 16px;
+        margin-bottom: 8px;
+        display: block;
+        color: #333;
+    }
+    
+    form input, form select, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #333;
+    }
+    
+    form textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+    
+    /* Button Styling */
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+    
+    /* Success and Error Messages */
+    p {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    p[style*="color: green"] {
+        color: green;
+    }
+    
+    p[style*="color: red"] {
+        color: red;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        form {
+            width: 90%;  /* Make the form smaller on smaller screens */
+            left: 10px;  /* Keep some margin on the left */
+        }
+    }
+    
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Success and Error Messages */
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+p[style*="color: green"] {
+    color: green;
+}
+
+p[style*="color: red"] {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;  /* Make the form smaller on smaller screens */
+    }
+}

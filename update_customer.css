@@ -1,0 +1,133 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: red;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center; /* Center the text of p elements */
+}
+
+/* Center the form */
+form {
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centers the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form elements to the left */
+    justify-content: space-between; /* Ensures the content is spaced out, with the warning at the bottom */
+    height: 100%; /* Set the form height to fill the space */
+}
+
+/* Add some margin to the last element inside the form (warning message) */
+form .warning {
+    margin-top: 20px; /* Adds space between form content and warning message */
+}
+
+/* Centered Labels */
+form label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left; /* Align labels to the left */
+    width: 100%;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form input[disabled] {
+    background-color: #f1f1f1;
+}
+
+form select {
+    width: 100%;
+}
+
+/* Error and Success Messages */
+p[style='color: red;'],
+p[style='color: green;'] {
+    color: red; /* Default to red for error */
+    font-weight: bold;
+    text-align: center; /* Center the text of warning messages */
+}
+
+/* Specific green color for success messages */
+p[style='color: green;'] {
+    color: green;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"],
+    form select,
+    form textarea {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+}

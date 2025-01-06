@@ -1,0 +1,123 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center elements vertically */
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;  /* Form width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the form content horizontally */
+}
+
+form label {
+    font-size: 16px;
+    color: #555;
+    align-self: flex-start;  /* Align label to the left */
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="email"], form input[type="number"], form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Error Message */
+p[style='color: red;'] {
+    color: red;
+    font-weight: bold;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Search Results */
+h2 {
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    form {
+        padding: 15px;
+    }
+
+    form input[type="text"], form input[type="email"], form input[type="number"], form select, form textarea, form button {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}
